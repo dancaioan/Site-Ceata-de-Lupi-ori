@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceata de Lupișori „Sf. Anton de Padova” | Cercetașii Munților</title>
+    <!-- Fonts matching the photo: Merriweather for the elegant jungle quote & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              scout: {
+                dark: '#0B132B',       /* Deep scout bleumarin / navy */
+                darker: '#060B1A',     /* Midnight deep bleumarin */
+                surface: '#121F42',    /* Bleumarin surface card */
+                surfaceLight: '#192B5A',/* Lighter bleumarin tone */
+                border: '#233870',     /* Bleumarin border accent */
+                gold: '#FACC15',       /* Vivid yellow */
+                yellow: '#FACC15',     /* Scout scarf bright yellow */
+                amber: '#EAB308',      /* Deep yellow */
+                cream: '#FEFDF8',
+                badge: '#CA8A04'
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+              quote: ['"Merriweather"', 'Georgia', 'serif'],
+              scoutTitle: ['"Cinzel"', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+      </head>
+  <body class="bg-scout-dark text-slate-200 antialiased selection:bg-scout-yellow selection:text-scout-dark min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.js"></script></body>
+</html>
